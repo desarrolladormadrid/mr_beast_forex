@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMr Beast Forex by desarrolladormadrid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .widget-container {
+            margin: 20px 0;
+        }
+
+        .widget-container iframe {
+            width: 100%;
+            border: none;
+        }
+
+        .tradingview-widget-container {
+            margin-bottom: 20px;
+        }
+
+        .tradingview-widget-container__widget {
+            height: 100%;
+        }
+
+        .widget-title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        .chart-container {
+            margin: 20px 0;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: -20px;
+            margin-bottom: -10px;
+        }
+
+        .mainWrapper-OLfCe9c0 {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async>
+                {
+                    "symbols": [
+                        {
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500 Index"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR to USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "Bitcoin"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "Ethereum"
+                        },
+                        {
+                            "description": "Oro",
+                            "proName": "FXOPEN:XAUUSD"
+                        },
+                        {
+                            "description": "Euro Usd",
+                            "proName": "FX:EURUSD"
+                        },
+                        {
+                            "description": "USD JPY",
+                            "proName": "FX:USDJPY"
+                        }
+                    ],
+                        "showSymbolLogo": false,
+                            "isTransparent": false,
+                                "displayMode": "adaptive",
+                                    "colorTheme": "light",
+                                        "locale": "es"
+                }
+            </script>
+    </div>
+    <div class="container">
+        <h1>Mr Beast Forex</h1>
+    </div>
+    <!-- TradingView Widget END -->
+    <div class="container" style="height: 40vh;">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                    {
+                        "symbols": [
+                            [
+                                "FXOPEN:XAUUSD|1D"
+                            ],
+                            [
+                                "FX:EURUSD|1D"
+                            ],
+                            [
+                                "FX:USDJPY|1D"
+                            ],
+                            [
+                                "CBOT:ZC1!|1D"
+                            ],
+                            [
+                                "CBOT:ZW1!|1D"
+                            ],
+                            [
+                                "BITSTAMP:BTCUSD|1D"
+                            ],
+                            [
+                                "COINBASE:ETHUSD|1D"
+                            ],
+                            [
+                                "NYSE:MCD|1D"
+                            ],
+                            [
+                                "NYSE:NKE|1D"
+                            ], [
+                                "FX:GBPUSD|1D"
+                            ],
+                            [
+                                "FX:AUDUSD|1D"
+                            ],
+                            [
+                                "FX:USDCAD|1D"
+                            ],
+                            [
+                                "FX:USDCHF|1D"
+                            ],
+                            [
+                                "FX:NZDUSD|1D"
+                            ],
+                            [
+                                "FX:EURJPY|1D"
+                            ],
+                            [
+                                "FX:EURGBP|1D"
+                            ],
+                            [
+                                "FX:GBPJPY|1D"
+                            ],
+                            [
+                                "FX:EURCAD|1D"
+                            ],
+                            [
+                                "FX:CHFJPY|1D"
+                            ],
+                            [
+                                "FX:AUDJPY|1D"
+                            ],
+                            [
+                                "FX:GBPAUD|1D"
+                            ],
+                            [
+                                "FX:EURNZD|1D"
+                            ],
+                            [
+                                "FX:AUDCAD|1D"
+                            ],
+                            [
+                                "FX:CADJPY|1D"
+                            ],
+                            [
+                                "FX:EURCHF|1D"
+                            ],
+                            [
+                                "FX:GBPCAD|1D"
+                            ],
+                            [
+                                "FX:NZDJPY|1D"
+                            ],
+                            [
+                                "FX:CADCHF|1D"
+                            ],
+                            [
+                                "FX:USDMXN|1D"
+                            ]
+                        ],
+                            "chartOnly": false,
+                                "width": "100%",
+                                    "height": "100%",
+                                        "locale": "en",
+                                            "colorTheme": "light",
+                                                "autosize": true,
+                                                    "showVolume": true,
+                                                        "showMA": false,
+                                                            "hideDateRanges": false,
+                                                                "hideMarketStatus": false,
+                                                                    "hideSymbolLogo": false,
+                                                                        "scalePosition": "right",
+                                                                            "scaleMode": "Normal",
+                                                                                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                                                    "fontSize": "10",
+                                                                                        "noTimeScale": false,
+                                                                                            "valuesTracking": "1",
+                                                                                                "changeMode": "price-and-percent",
+                                                                                                    "chartType": "area",
+                                                                                                        "headerFontSize": "medium",
+                                                                                                            "lineWidth": 2,
+                                                                                                                "lineType": 0,
+                                                                                                                    "dateRanges": [
+                                                                                                                        "1d|1",
+                                                                                                                        "1m|30",
+                                                                                                                        "3m|60",
+                                                                                                                        "12m|1D",
+                                                                                                                        "60m|1W",
+                                                                                                                        "all|1M"
+                                                                                                                    ]
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+
+
+
+    <!-- TradingView Widget BEGIN  3 relojes-->
+    <div class="container">
+        <h2>Análisis Técnicos</h2>
+    </div>
+    <div style="display: flex; justify-content: space-between;" class="container">
+        <!-- Columna 1: XAUUSD -->
+        <div style="width: 24%;">
+            <div class="tradingview-widget-container">
+                <div class=" tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "15m",
+                                "width": "100%",
+                                    "isTransparent": false,
+                                        "height": "450",
+                                            "symbol": "FXOPEN:XAUUSD",
+                                                "showIntervalTabs": true,
+                                                    "displayMode": "single",
+                                                        "locale": "es",
+                                                            "colorTheme": "light"
+                        }
+                    </script>
+            </div>
+        </div>
+
+        <!-- Columna 2: EURUSD -->
+        <div style="width: 24%;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "15m",
+                                "width": "100%",
+                                    "isTransparent": false,
+                                        "height": "450",
+                                            "symbol": "FX:EURUSD",
+                                                "showIntervalTabs": true,
+                                                    "displayMode": "single",
+                                                        "locale": "es",
+                                                            "colorTheme": "light"
+                        }
+                    </script>
+            </div>
+        </div>
+
+        <!-- Columna 3: USDJPY -->
+        <div style="width: 24%;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "15m",
+                                "width": "100%",
+                                    "isTransparent": false,
+                                        "height": "450",
+                                            "symbol": "FX:USDJPY",
+                                                "showIntervalTabs": true,
+                                                    "displayMode": "single",
+                                                        "locale": "es",
+                                                            "colorTheme": "light"
+                        }
+                    </script>
+            </div>
+        </div>
+
+        <!-- Columna 4: BTCUSD -->
+        <div style="width: 24%;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "15m",
+                                "width": "100%",
+                                    "isTransparent": false,
+                                        "height": "450",
+                                            "symbol": "BITSTAMP:BTCUSD",
+                                                "showIntervalTabs": true,
+                                                    "displayMode": "single",
+                                                        "locale": "es",
+                                                            "colorTheme": "light"
+                        }
+                    </script>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Calendario Económico y Noticias</h2>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+
+
+        <!-- Calendario Económico -->
+
+        <div style="width: 60%;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                        {
+                            "colorTheme": "light",
+                                "isTransparent": false,
+                                    "width": "100%",
+                                        "height": "550",
+                                            "locale": "es",
+                                                "importanceFilter": "0,1",
+                                                    "countryFilter": "us,eu"
+                        }
+                    </script>
+            </div>
+        </div>
+
+
+        <!-- Noticias -->
+        <div style="width: 30%;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                        {
+                            "feedMode": "all_symbols",
+                                "isTransparent": false,
+                                    "displayMode": "regular",
+                                        "width": "100%",
+                                            "height": "550",
+                                                "colorTheme": "light",
+                                                    "locale": "en"
+                        }
+                    </script>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <h2>Mapa de Calor Forex y Cripto</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <!-- Mapa de Calor Forex -->
+        <div style="width: 40%; height: 600px;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                        {
+                            "width": "100%",
+                                "height": "100%",
+                                    "currencies": [
+                                        "EUR",
+                                        "USD",
+                                        "JPY",
+                                        "GBP",
+                                        "CHF",
+                                        "AUD",
+                                        "CAD",
+                                        "NZD",
+                                        "CNY"
+                                    ],
+                                        "isTransparent": false,
+                                            "colorTheme": "light",
+                                                "locale": "en",
+                                                    "backgroundColor": "#ffffff"
+                        }
+                    </script>
+            </div>
+        </div>
+
+        <!-- Mapa de Calor Criptos -->
+        <div style="width: 40%; height: 600px;">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-crypto-coins-heatmap.js" async>
+                        {
+                            "dataSource": "Crypto",
+                                "blockSize": "market_cap_calc",
+                                    "blockColor": "change",
+                                        "locale": "en",
+                                            "symbolUrl": "",
+                                                "colorTheme": "light",
+                                                    "hasTopBar": false,
+                                                        "isDataSetEnabled": false,
+                                                            "isZoomEnabled": true,
+                                                                "hasSymbolTooltip": true,
+                                                                    "isMonoSize": false,
+                                                                        "width": "100%",
+                                                                            "height": "100%"
+                        }
+                    </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- TradingView Widget END -->
+    <!-- Footer -->
+
+
+    <!-- JavaScript para manejar el cambio de símbolo -->
+    <script>
+        document.getElementById('symbolSelector').addEventListener('change', function () {
+            var symbol = this.value;
+            var chartContainer = document.getElementById('chartContainer');
+            var chartScript = document.createElement('script');
+            chartScript.type = 'text/javascript';
+            chartScript.src = 'https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js';
+            chartScript.async = true;
+            chartScript.text = JSON.stringify({
+                "symbols": [[symbol, "1D"]],
+                "chartOnly": false,
+                "width": "100%",
+                "height": "500",
+                "locale": "en",
+                "colorTheme": "light",
+                "autosize": true,
+                "showVolume": false,
+                "showMA": false,
+                "hideDateRanges": false,
+                "hideMarketStatus": false,
+                "hideSymbolLogo": false,
+                "scalePosition": "right",
+                "scaleMode": "Normal",
+                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                "fontSize": "10",
+                "noTimeScale": false,
+                "valuesTracking": "1",
+                "changeMode": "price-and-percent",
+                "chartType": "area",
+                "maLineColor": "#2962FF",
+                "maLineWidth": 1,
+                "maLength": 9,
+                "headerFontSize": "medium",
+                "lineWidth": 2,
+                "lineType": 0,
+                "dateRanges": [
+                    "1d|1",
+                    "1m|30",
+                    "3m|60",
+                    "12m|1D",
+                    "60m|1W",
+                    "all|1M"
+                ]
+            });
+            chartContainer.innerHTML = '';
+            chartContainer.appendChild(chartScript);
+        });
+    </script>
+
+</body>
+
+</html>
